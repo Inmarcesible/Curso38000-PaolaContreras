@@ -7,6 +7,9 @@
     <title>home</title>
     <link rel="shortcut icon" href="./img/naranja.png">
     <link rel="stylesheet" href="./style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -30,9 +33,39 @@
     </nav>
 </header>
 
-<section id="sec_img">
+<!--<section id="sec_img">
     <img src="./img/compote.jpg" alt="conservas">
-</section>
+</section>-->
+
+<!-- Carousel -->
+<div id="ImgInicio" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#ImgInicio" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#ImgInicio" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#ImgInicio" data-bs-slide-to="2"></button>
+    </div>
+  
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/DryFruit.jpg" alt="DryFruit" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/Mermeladas.jpg" alt="Mermelada" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/conserva.jpg" alt="conserva" class="d-block w-100">
+      </div>
+    </div>
+  
+    <button class="carousel-control-prev" type="button" data-bs-target="#ImgInicio" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#ImgInicio" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
 
 <section>
     <h3>Conocenos</h3>
@@ -45,12 +78,42 @@
     <hr style="margin-top: 100px;">
 </section>-->
 
+<!--<section>
+    <div>
+        <h3>Nuestros Productos</h3>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4 bg-warning p-1">
+                <Img src="./img/iconos/tarta-de-queso.png" alt="icontarta" class="icon">
+                <h4>Reposteria</h4>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 bg-warning p-1">
+                <img src="./img/iconos/comida-enlatada-2.png" alt="iconconserva" class="icon">
+                <h4>Conservas</h4>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 bg-warning p-1">
+                <img src="./img/iconos/mermelada.png" alt="iconmermelada" class="icon">
+                <h4>Mermeladas</h4>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 bg-warning p-1">
+                <img src="./img/iconos/macadamia.png" alt="iconfruitsecos" class="icon">
+                <h4>Frujotos Secos</h4>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 bg-warning p-1">
+                <img src="./img/iconos/grano.png" alt="icongrano" class="icon">
+                <h4>Granel</h4>
+            </div>
+
+        </div>
+    </div>
+</section>-->
+
 <section>
     <div>
-        <h3>NUESTROS PRODUCTOS</h3>
+        <h3>Nuestros Productos</h3>
     </div>
-    <!--<div class="garantia-grid-responsive">-->
-    <div>
+    <div class="garantia-grid-responsive">
         <div>
             <Img src="./img/iconos/tarta-de-queso.png" alt="icontarta" class="icon">
             <h4>Reposteria</h4>
@@ -73,6 +136,7 @@
         </div>
     </div>
 </section>
+
 <!--
 <iframe src="https://www.superzoo.cl/" frameborder="0" width="400" height="200"></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Oj4YwLhaano" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
