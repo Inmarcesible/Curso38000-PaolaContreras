@@ -12,7 +12,7 @@ padding: 50px 25px;             /*arriba&abajo derecha&izquierda*
 overflow: hidden; Oculta el contenido excedente
 overflow: scroll; Oculta el contenido excedente permitiendo nvagar
 overflow: auto; Oculta y scrollea automaricamente si neceidadde indicarlo
-*/ 
+*/  
 * {
     margin: 0%;
     padding: 0%;
