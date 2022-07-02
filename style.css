@@ -17,6 +17,8 @@ overflow: auto; Oculta y scrollea automaricamente si neceidadde indicarlo
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    /*font-family: "Orkney", Sans-serif;*/
+    font-family: emoji;/* auto; inherit;*/
     /*font-family: sans-serif;*/
 }
 
@@ -24,7 +26,12 @@ overflow: auto; Oculta y scrollea automaricamente si neceidadde indicarlo
 header {
     background-color: #031423;
     color: #ff6900;
-    padding: 1px;
+    padding: 0px;
+}
+
+.nav-pills .nav-link {
+    color: #ff6900;
+    --bs-nav-link-hover-color: #6c757d;
 }
 
 .cuerpo {
@@ -50,7 +57,7 @@ section {
 }
 
 header nav {
-    margin: 2%;
+    margin: 0%;
 }
 
 header a {
@@ -81,6 +88,13 @@ h3{
     margin: center 1rem;
 }
 
+.iconprod {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: auto;
+}
+
 .garantia-grid-responsive {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -89,6 +103,12 @@ h3{
 }
 
 .garantia-grid-responsive div h4 {
+    text-align:center;
+    height: 50px;
+    margin: 10px;
+}
+
+.garantia-grid-responsive div h6 {
     text-align:center;
     height: 50px;
     margin: 10px;
@@ -111,9 +131,7 @@ h3{
     margin: auto;
 }
 
-fieldset {
-    height: 350px;
-}
+
 @media (max-width: 700px) {
     .garantia-grid-responsive {
         grid-template-columns: 1fr 1fr 1fr;

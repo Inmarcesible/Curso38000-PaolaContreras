@@ -7,107 +7,111 @@
     <title>ventas</title>
     <link rel="shortcut icon" href="../img/naranja.png">
     <link rel="stylesheet" href="../style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
-<body>
-    <header>
+<body>   
+    <header class="header">
         <div id="titulo">
             <h2>Narrate</h2>
-            <h3>Productos Caseros</h3>
+            <h8>Productos Caseros</h8>
         </div>
         
         <nav>
-            <ul class="menuPricipal">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./regalos.html">Regalos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./empresas.html">Empresa</a></li>
+            <ul class="nav nav-pills justify-content-around">
+                <li class="p-1 nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="p-1 nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                <li class="p-1 nav-item"><a class="nav-link" href="./regalos.html">Regalos</a></li>
+                <li class="p-1 nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                <li class="p-1 nav-item"><a class="nav-link" href="#">Empresa</a></li>
                 <!--|target="_blank" Ensace absoluto
-                    <li><a href="./contacto.html" target="_blank">Contacto</a></li>
-                -->
+                <li><a href="./contacto.html" target="_blank">Contacto</a></li>
+            -->
             </ul>
         </nav>
     </header>
-    
+
     <section>
         <div>
-            <h3>COMO FUNCIONA NUESTRO SERVICIO DE VENTA EMPRESA</h3>
+            <h4>COMO FUNCIONA NUESTRO SERVICIO DE VENTA EMPRESA</h4>
         </div>
         <div class="garantia-grid-responsive">
             <div>
                 <Img src="../img/iconos/iconwhatsapp.png" alt="iconwhatsapp" class="icon">
-                <h4>CONTÁCTANOS</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur mollitia vel optio tenetur eaque possimus, aperiam repudiandae deserunt dolor blanditiis iure ab molestias, fugit temporibus aspernatur vitae commodi repellendus?</p>
+                <h6 class="text-center">CONTÁCTANOS</h6>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur mollitia vel optio tenetur eaque possimus, aperiam repudiandae deserunt dolor blanditiis iure ab molestias, fugit temporibus aspernatur vitae commodi repellendus?</p>
             </div>
             <div>
                 <img src="../img/iconos/iconasesoria.png" alt="iconasesoria" class="icon">
-                <h4>ASESOÍA COMERCIAL</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat nam laborum reprehenderit, recusandae rerum nesciunt perspiciatis, minus harum at dolores quam eius voluptates, repudiandae iure quis. Iste, minus id?</p>
+                <h6 class="text-center">ASESOÍA COMERCIAL</h6>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat nam laborum reprehenderit, recusandae rerum nesciunt perspiciatis, minus harum at dolores quam eius voluptates, repudiandae iure quis. Iste, minus id?</p>
             </div>
             <div>
                 <img src="../img/iconos/iconpresupuesto.png" alt="iconpresupuesto" class="icon">
-                <h4>ACEPTACION PRESUPUESTO</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perferendis voluptas iste non magnam consequuntur quaerat ea itaque quidem, nulla aperiam quae provident illum alias obcaecati inventore modi animi nihil.</p>
+                <h6 class="text-center">ACEPTACION PRESUPUESTO</h6>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perferendis voluptas iste non magnam consequuntur quaerat ea itaque quidem, nulla aperiam quae provident illum alias obcaecati inventore modi animi nihil.</p>
             </div>
             <div>
                 <img src="../img/iconos/icondespacho.png" alt="icondespacho" class="icon">
-                <h4>DESPACHO</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque perspiciatis minima deleniti rem dolor maxime aut quod tempora. Atque corrupti culpa eum a quasi amet eos dolor dolorum doloribus!</p>
+                <h6 class="text-center">DESPACHO</h6>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque perspiciatis minima deleniti rem dolor maxime aut quod tempora. Atque corrupti culpa eum a quasi amet eos dolor dolorum doloribus!</p>
             </div>
             <div>
                 <img src="../img/iconos/iconexito.png" alt="iconexito" class="icon">
-                <h4>SATISFACCIÓN DE NUESTROS CLIENTES</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nam blanditiis dolorum cum quo minus. Neque corrupti a nulla quas autem nisi sapiente quod? Sunt dolorem a in magnam sed!</p>
+                <h6 class="text-center">SATISFACCIÓN DE NUESTROS CLIENTES</h6>
+                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nam blanditiis dolorum cum quo minus. Neque corrupti a nulla quas autem nisi sapiente quod? Sunt dolorem a in magnam sed!</p>
             </div>
         </div>
     </section>
 
     <section>
         <div class="contacto-grid-responsive">
-            <div>
+            <div class="container mt-3 border border-1">
                 <form action="enviar.php" method="get">
                     <fieldset>
                         <legend>Envianos tus comentarios</legend>
-                        <div>
-                            <label for="nombre">Nombre de la Empresa</label>
-                            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                        <div class="mb-3 mt-3">
+                            <label for="nombre">Nombre Comple</label>
+                            <input type="text" class = "form-control" id="nombre" placeholder="Nombres y apellidos" placeholder="Ingrese su nombre">
                         </div>
-                        <div>
+                        <div class="mb-3">
                             <label for="email">Email</label>
-                            <input type="email" id="email" required>
+                            <input type="email" class = "form-control" id="email" placeholder="Email" required>
                         </div>
-                        <div>
+                        <div class="mb-3">
                             <label for="asunto">Asunto</label>
-                            <input type="text" id="asunto" required>
+                            <input type="text" class = "form-control" id="asunto" placeholder="asunto" required>
                         </div>
-                        <div>
-                            <label for="mensaje">Mensaje</label>
-                            <textarea type="mensaje" id="mensaje" required></textarea>
+                        <div class="mb-3">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" rows="5" id="mensaje" name="text" required></textarea>
                         </div>
+                        <div class="mb-1"><button type="button" class="btn btn-outline-secondary">Enviar</button></div>
                     </fieldset>
                 </form>
             </div>
 
-    
-            <div>
+            <div class="container mt-3 border border-1">
                 <fieldset>
-                    <legend>Contactanos:</legend>
-                    <div>
-                        <h4>Atención:</h4>
+                    <legend>Contactanos</legend>
+                    <div class="mb-3 mt-3">
+                        <label for="atencion"><dt>Atencion:</dt></label>
                         <p>De lunes a sábados de 9:00 a 18:30 horas.</p>
                     </div>
-                    <div>
-                        <h4>Teléfono / WhatsApp:</h4>
+                    <div class="mb-3">
+                        <label for="telefono-narrate"><dt>Teléfono / WhatsApp:</dt></label>
                         <p>+569xxxxxxxx</p>
                     </div>
-                    <div>
-                        <h4>Correo electrónico:</h4>
+                    <div class="mb-3">
+                        <label for="email-narrate"><dt>Correo electrónico:</dt></label>
                         <p>hola@xxx.cl</p>
                     </div>
-                    <div>
-                        <h4>Dirección:</h4>
+                    <div class="mb-3">
+                        <label for="direccion-narrate"><dt>Dirección:</dt></label>
                         <p>Domeyko 2010, Santiago, RM, CHILE</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.738171745844!2d-70.66495758480052!3d-33.45612738077235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c504877129e9%3A0x683dbdda33d014b2!2sDomeyko%202010%2C%20Santiago%2C%208370417%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1653694714729!5m2!1ses-419!2scl" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.738171745844!2d-70.66495758480052!3d-33.45612738077235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c504877129e9%3A0x683dbdda33d014b2!2sDomeyko%202010%2C%20Santiago%2C%208370417%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1653694714729!5m2!1ses-419!2scl" width="100%" height="190px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </fieldset>
             </div>
@@ -128,5 +132,10 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.738171745844!2d-70.66495758480052!3d-33.45612738077235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c504877129e9%3A0x683dbdda33d014b2!2sDomeyko%202010%2C%20Santiago%2C%208370417%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1653694714729!5m2!1ses-419!2scl" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 </html>
