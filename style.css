@@ -34,35 +34,33 @@ header {
     --bs-nav-link-hover-color: #6c757d;
 }
 
+/*
 .cuerpo {
     display: inline;
     
 }
 
 .menuPricipal li{
-    display:inline-flex; /*para margin top y boton inline-block*/
+    display:inline-flex; 
     margin: 0px 10px;
     align-items: center;
-}
+} */
 
 
 section {
     margin: 1%;
     padding: 1%;
 }
-
+/*
 #sec_img {
     margin: 0%;
     padding: 0%;
-}
+}*/
 
 header nav {
     margin: 0%;
 }
 
-header a {
-    color: #ff6900;
-}
 
 /*id*/
 #titulo {
@@ -91,8 +89,8 @@ h3{
 }
 
 .iconprod {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: block;
     margin: auto;
 }
@@ -160,6 +158,12 @@ h3{
         grid-template-columns: 1fr;
     }
 }
+/*
+@media (min-width: 576px){
+    .container, .container-sm {
+        max-width: 100%;
+    }
+}*/
 
 @media (max-width: 450px) {
     .garantia-grid-responsive {

@@ -1,0 +1,19 @@
+header {
+    background-color: #031423;
+    color: $colorPrincipal; //#ff6900;
+    padding: 0px;
+    #titulo {
+        text-align: center;
+    }
+}
+
+nav {
+    margin: 0%;
+}
+
+.nav-pills {
+    .nav-link {
+        color: $colorPrincipal; //#ff6900;
+        --bs-nav-link-hover-color: #6c757d;  //#6c757d;
+    }
+}
