@@ -7,19 +7,24 @@ h3{
     margin-bottom: 10px;
 }
 
-.icon {
-    width: 50px;
-    height: 50px;
-    //margin: center 1rem;
+/*mixin con variables*/
+@mixin icons($tpx) {
+    width: $tpx;
+    height: $tpx;
     display: block;
     margin: auto;
 }
 
+.icon {
+    @include icons(50px);
+}
+
 .iconprod {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: auto;
+    @include icons(100px);
+}
+
+.producto {
+    @include icons(150px);
 }
 
 .hrefseccion {
@@ -30,20 +35,14 @@ h3{
 }
 
 .hrefseccion:hover {
-    color: #6c757d;
+    color: $colorHover; //#6c757d;
 }
 
-.producto {
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: auto;
-}
-
+/*map-get*/
 //index.html
 .productos-grid-responsive {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: map-get($columnas,c5); //1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     grid-gap: 1rem;
 
@@ -60,7 +59,7 @@ h3{
 //pag/empresas.html
 .garantia-grid-responsive {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: map-get($columnas,c5);//1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     grid-gap: 1rem;
 
@@ -79,7 +78,7 @@ h3{
 
 .contacto-grid-responsive {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: map-get($columnas,c2); //1fr 1fr;
     gap: 10px;
     div {
         max-width: 100%;
@@ -89,35 +88,35 @@ h3{
 
 @media (max-width: 700px) {
     .productos-grid-responsive {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: map-get($columnas,c3); //1fr 1fr 1fr;
     }
 
     .garantia-grid-responsive {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: map-get($columnas,c3); //1fr 1fr 1fr;
     }
 
     .contacto-grid-responsive {
-        grid-template-columns: 1fr;
+        grid-template-columns: map-get($columnas,c1); //1fr;
     }
 }
 
 @media (max-width: 450px) {
     .productos-grid-responsive {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: map-get($columnas,c2); //1fr 1fr;
     }
 
     .garantia-grid-responsive {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: map-get($columnas,c2);//1fr 1fr;
     }
 }
 
 @media (max-width: 380px) {
     .productos-grid-responsive {
-        grid-template-columns: 1fr;
+        grid-template-columns: map-get($columnas,c1); //1fr;
     }
 
     .garantia-grid-responsive {
-        grid-template-columns: 1fr;
+        grid-template-columns: map-get($columnas,c1); //1fr;
     }
 }
 /*

@@ -1,5 +1,5 @@
-header {
-    background-color: #031423;
+.header {
+    background-color: $colorbg;
     color: $colorPrincipal; //#ff6900;
     padding: 0px;
     #titulo {
@@ -11,9 +11,28 @@ nav {
     margin: 0%;
 }
 
+/* extend */
+#menu1 {
+    color: $colorPrincipal;
+}
+
 .nav-pills {
     .nav-link {
-        color: $colorPrincipal; //#ff6900;
+        //color: $colorPrincipal; //#ff6900;
+        @extend #menu1;
         --bs-nav-link-hover-color: #6c757d;  //#6c757d;
     }
 }
+
+
+#menuicon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,105,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#buttonicon {
+    border-color: rgb(255,105,0);
+}
+/*
+li {
+    margin: 0px 10% 0px 10%;
+}*/
