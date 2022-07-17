@@ -16,6 +16,10 @@ nav {
     color: $colorPrincipal;
 }
 
+#menu1:hover {
+    color: $colorHover;
+}
+
 .nav-pills {
     .nav-link {
         //color: $colorPrincipal; //#ff6900;

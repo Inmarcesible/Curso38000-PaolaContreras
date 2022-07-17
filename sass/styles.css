@@ -25,6 +25,10 @@ nav {
   color: #ff6900;
 }
 
+#menu1:hover, .nav-pills .nav-link:hover {
+  color: #6c757d;
+}
+
 .nav-pills .nav-link {
   --bs-nav-link-hover-color: #6c757d;
 }
@@ -72,10 +76,6 @@ h3 {
   margin: auto;
 }
 
-.contacto {
-  height: 40px;
-}
-
 .detalleprod {
   text-align: center;
   color: #031423;
@@ -102,14 +102,6 @@ h3 {
 .productos-grid-responsive a div h4 {
   height: 50px;
   margin: 10px;
-}
-
-.instagram {
-  color: darkmagenta;
-}
-
-.whatzaap {
-  color: #00bb2d;
 }
 
 .garantia-grid-responsive {
@@ -181,4 +173,26 @@ footer {
 }
 footer #piepag {
   max-width: 98%;
+}
+footer #piepag div div h6 {
+  text-transform: uppercase;
+}
+
+.contacto {
+  display: inline-flex;
+}
+.contacto p {
+  padding-left: 15px;
+}
+
+.correo {
+  color: chocolate;
+}
+
+.instagram {
+  color: darkmagenta;
+}
+
+.whatzaap {
+  color: #00bb2d;
 }/*# sourceMappingURL=styles.css.map */

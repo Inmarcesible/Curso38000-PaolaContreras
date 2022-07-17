@@ -6,8 +6,34 @@ footer {
 
     #piepag {
       max-width: 98%;
+
+      div {
+        div {
+          h6 {
+            text-transform: uppercase;
+          }
+        }
+      }
     }
+}
+
+.contacto {
+  display: inline-flex;
+  p {
+    padding-left: 15px;
   }
+}
 
 
+.correo {
+  color: chocolate;
+}
+
+.instagram {
+  color: darkmagenta;
+}
+
+.whatzaap {
+  color: #00bb2d;
+}
 
