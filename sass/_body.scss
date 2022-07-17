@@ -27,6 +27,15 @@ h3{
     @include icons(150px);
 }
 
+.contacto {
+    height: 40px;
+}
+
+.detalleprod {
+    text-align: center;
+    color: #031423;
+}
+
 .hrefseccion {
     color: black;
     text-decoration: none;
@@ -54,6 +63,14 @@ h3{
             }
         }
     }
+}
+
+.instagram {
+    color: darkmagenta;
+}
+
+.whatzaap {
+    color: #00bb2d;
 }
 
 //pag/empresas.html
