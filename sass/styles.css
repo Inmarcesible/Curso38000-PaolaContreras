@@ -14,6 +14,15 @@
 .header #titulo {
   text-align: center;
 }
+.header #hrefinicio {
+  color: #ff6900;
+  text-decoration: none;
+  text-align: center;
+  /*--bs-nav-link-hover-color: #6c757d;*/
+}
+.header #hrefinicio:hover {
+  color: #6c757d;
+}
 
 nav {
   margin: 0%;

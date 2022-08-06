@@ -5,7 +5,20 @@
     #titulo {
         text-align: center;
     }
+
+    #hrefinicio {
+        color: $colorPrincipal;
+        text-decoration: none;
+        text-align: center;
+        /*--bs-nav-link-hover-color: #6c757d;*/ 
+    }
+    
+    #hrefinicio:hover {
+        color: $colorHover; //#6c757d;
+    }
 }
+
+
 
 nav {
     margin: 0%;
