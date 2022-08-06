@@ -2,8 +2,7 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: emoji;
-  /* auto; inherit;*/
+  font-family: emoji; /* auto; inherit;*/
   /*font-family: sans-serif;*/
 }
 
@@ -70,8 +69,8 @@ h3 {
 }
 
 .producto {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   display: block;
   margin: auto;
 }
@@ -132,11 +131,9 @@ h3 {
   .productos-grid-responsive {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
   .garantia-grid-responsive {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
   .contacto-grid-responsive {
     grid-template-columns: 1fr;
   }
@@ -145,7 +142,6 @@ h3 {
   .productos-grid-responsive {
     grid-template-columns: 1fr 1fr;
   }
-
   .garantia-grid-responsive {
     grid-template-columns: 1fr 1fr;
   }
@@ -154,7 +150,6 @@ h3 {
   .productos-grid-responsive {
     grid-template-columns: 1fr;
   }
-
   .garantia-grid-responsive {
     grid-template-columns: 1fr;
   }
