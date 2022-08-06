@@ -14,14 +14,6 @@
 .header #titulo {
   text-align: center;
 }
-.header .a {
-  background-color: #031423;
-  color: #ff6900;
-  padding: 0px;
-}
-.header .a #titulo {
-  text-align: center;
-}
 
 nav {
   margin: 0%;
@@ -123,7 +115,8 @@ h3 {
   margin: 10px;
 }
 .garantia-grid-responsive div p {
-  text-align: -webkit-center;
+  text-align: initial;
+  padding: 2px;
 }
 
 .contacto-grid-responsive {
